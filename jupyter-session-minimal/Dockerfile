@@ -40,3 +40,4 @@ RUN /opt/python/"${PYTHON_VERSION}"/bin/python3 -m pip install \
     && /opt/python/"${PYTHON_VERSION}"/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
 
 ENV PATH="/opt/python/${PYTHON_VERSION}/bin:${PATH}"
+EXPOSE  8788/tcp

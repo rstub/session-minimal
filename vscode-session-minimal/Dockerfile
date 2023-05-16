@@ -23,3 +23,4 @@ RUN curl -O https://cdn.rstudio.com/python/ubuntu-2204/pkgs/python-${PYTHON_VERS
     && /opt/python/${PYTHON_VERSION}/bin/python3 -m pip install --upgrade pip setuptools virtualenv
 
 ENV PATH="/opt/python/${PYTHON_VERSION}/bin:${PATH}"
+EXPOSE  8788/tcp

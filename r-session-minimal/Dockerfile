@@ -28,3 +28,5 @@ RUN curl -O https://cdn.rstudio.com/r/ubuntu-2204/pkgs/r-${R_VERSION}_1_amd64.de
     && ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R \
     && ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
 
+
+EXPOSE  8788/tcp
